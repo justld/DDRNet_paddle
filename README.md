@@ -15,9 +15,9 @@
 >在CityScapes val数据集的测试效果如下表。
 
 
-| NetWork  | steps |opt|image_size| batch_size |dataset|memory|card|  mIou  |                                             config                                              |                          weight                           |log|
-|:--------:|:-----:| :---: |:--------:|:----------:| :---: | :---: | :---: |:------:|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------:| :---: |
-| DDRNet23 | 120K  |SGD|  1024x1024x512   |     12     |CityScapes|32G|4| 79.79% | [ddrnet23_cityscapes_1024x1024_120k.yml](configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml) | [link 提取码：z1da](https://pan.baidu.com/s/108xV62Mmn8wztX2gxKsHLQ ) |[log](log/trainer-0.log)|
+| NetWork  | steps |opt|image_size| batch_size |dataset|memory|card|  mIou  |                                             config                                              |                          weight                           |            log             |
+|:--------:|:-----:| :---: |:--------:|:----------:| :---: | :---: | :---: |:------:|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|:--------------------------:|
+| DDRNet23 | 120K  |SGD|  1024x1024x512   |     12     |CityScapes|32G|4| 79.79% | [ddrnet23_cityscapes_1024x1024_120k.yml](configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml) | [link 提取码：z1da](https://pan.baidu.com/s/108xV62Mmn8wztX2gxKsHLQ ) | [log](log/trainer-log.txt) |
 
 ## 3 数据集
 [CityScapes dataset](https://www.cityscapes-dataset.com/)
