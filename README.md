@@ -67,11 +67,20 @@ python val.py --config configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml --m
 ```
 
 ### 第四步：tipc
-在linux下，进入DDRNet_paddle文件夹，运行命令
+进入DDRNet_paddle文件夹，首先准备轻量级训练数据集，命令如下（会下载完整的cityscapes数据集）：
 ```bash
 bash test_tipc/prepare.sh ./test_tipc/configs/ddrnet/train_infer_python.txt 'lite_train_lite_infer'
+```
+接着运行训练推理一体化测试脚本：
+```bash
 bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/ddrnet/train_infer_python.txt 'lite_train_lite_infer'
 ```
+脚本会自动进行轻量级训练测试和推理，其推理结果如下图（只训练了50 iters，效果比较差）。  
+原图（来自cityscapes验证集）：
+![src_image](images/images.png)  
+预测结果（tipc只训练50iters预测结果，resize到512x512）：
+![dst_image](images/labels.png)
+
 
 ## 5 代码结构与说明
 **代码结构**
