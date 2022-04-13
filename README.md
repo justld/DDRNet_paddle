@@ -18,9 +18,9 @@
 >在CityScapes val数据集的测试效果如下表。
 
 
-| NetWork  | steps |opt|image_size| batch_size |dataset|memory|card|  mIou  |                                             config                                              |                          weight                           |             log             |
-|:--------:|:-----:| :---: |:--------:|:----------:| :---: | :---: | :---: |:------:|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|:---------------------------:|
-| DDRNet23 | 120K  |SGD|  1024x1024x512   |     12     |CityScapes|32G|4| 79.79% | [ddrnet23_cityscapes_1024x1024_120k.yml](configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml) | [link 提取码：z1da](https://pan.baidu.com/s/108xV62Mmn8wztX2gxKsHLQ ) | [log](train_log/trainer-log.txt) |
+| NetWork  | steps |opt| image_size | batch_size |dataset|memory|card|  mIou  |                                             config                                              |                          weight                           |             log             |
+|:--------:|:-----:| :---: |:----------:|:----------:| :---: | :---: | :---: |:------:|:-----------------------------------------------------------------------------------------------:|:---------------------------------------------------------:|:---------------------------:|
+| DDRNet23 | 120K  |SGD| 1024x1024  |     12     |CityScapes|32G|4| 79.85% | [ddrnet23_cityscapes_1024x1024_120k.yml](configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml) | [link 提取码：3mnx](https://pan.baidu.com/s/1mgTjHHIz3T44njYbpNURbg) | [log](train_log/trainer-log.txt) |
 
 ## 3 数据集
 [CityScapes dataset](https://www.cityscapes-dataset.com/)
@@ -108,7 +108,7 @@ bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/ddrnet/train_i
 │  val.py  
 ```
 **说明**
-1、本项目在Aistudio平台，使用Tesla V100 * 4 脚本任务训练120K miou达到79.79%。  
+1、本项目在Aistudio平台，使用Tesla V100 * 4 脚本任务训练120K miou达到79.85%。  
 2、本项目基于PaddleSeg开发。  
 
 ## 6 模型信息
@@ -124,4 +124,29 @@ bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/ddrnet/train_i
 | 硬件支持 | GPU、CPU                                                                                                                                         |
 | 在线体验 | [notebook](https://aistudio.baidu.com/aistudio/projectdetail/3755861?contributionType=1) |
 
+## 7 Citation
+```latex
+@article{hong2021deep,
+  title={Deep Dual-resolution Networks for Real-time and Accurate Semantic Segmentation of Road Scenes},
+  author={Hong, Yuanduo and Pan, Huihui and Sun, Weichao and Jia, Yisong},
+  journal={arXiv preprint arXiv:2101.06085},
+  year={2021}
+}
+
+@misc{liu2021paddleseg,
+      title={PaddleSeg: A High-Efficient Development Toolkit for Image Segmentation},
+      author={Yi Liu and Lutao Chu and Guowei Chen and Zewu Wu and Zeyu Chen and Baohua Lai and Yuying Hao},
+      year={2021},
+      eprint={2101.06175},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{paddleseg2019,
+    title={PaddleSeg, End-to-end image segmentation kit based on PaddlePaddle},
+    author={PaddlePaddle Contributors},
+    howpublished = {\url{https://github.com/PaddlePaddle/PaddleSeg}},
+    year={2019}
+}
+```
 

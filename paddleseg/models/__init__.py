@@ -54,4 +54,3 @@ from .espnetv1 import ESPNetV1
 from .bisenetv1 import BiseNetV1
 from .fastfcn import FastFCN
 from .pfpnnet import PFPNNet
-from .ddrnet import DDRNet_23
