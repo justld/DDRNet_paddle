@@ -5,6 +5,9 @@
 ![images](images/network.png)  
 本项目基于paddlepaddle框架复现了DDRNet语义分割模型.
 
+预测示例：
+![images](images/example.png)
+
 **论文：**
 - [1] Changqian Yu, Jingbo Wang, Chao Peng, Changxin Gao, Gang Yu, and Nong Sang. [Deep Dual-resolution Networks for Real-time and Accurate Semantic Segmentation of Road Scenes](https://arxiv.org/abs/2101.06085)
 
