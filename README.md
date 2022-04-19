@@ -64,7 +64,7 @@ python -m paddle.distributed.launch train.py --config configs/ddrnet/ddrnet23_ci
 ```
 
 ### 第三步：测试
-output目录下包含已经训练好的模型参数以及对应的日志文件。(权重文件在上方的表格中)
+(权重文件在上方的表格中)
 ```bash
 python val.py --config configs/ddrnet/ddrnet23_cityscapes_1024x1024_120k.yml --model_path {your_model_path}
 ```
@@ -122,7 +122,7 @@ bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/ddrnet/train_i
 | 框架版本 | PaddlePaddle==2.2.2                                                                                                                             |
 | 应用场景 | 语义分割                                                                                                                                            |
 | 硬件支持 | GPU、CPU                                                                                                                                         |
-| 在线体验 | [notebook](https://aistudio.baidu.com/aistudio/projectdetail/3755861?contributionType=1) |
+| 在线体验 | [notebook](https://aistudio.baidu.com/aistudio/projectdetail/3835408?contributionType=1) |
 
 ## 7 Citation
 ```latex
